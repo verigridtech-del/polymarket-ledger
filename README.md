@@ -40,8 +40,8 @@ Tracking start: **2026-02-26 21:08 JST**
 
 ## Links
 
-- Daily updates posted on [X (Twitter)](https://x.com/)
-- Bot runs 24/7 on AWS EC2
+- Daily updates posted on [X (Twitter)]https://x.com/verigrid_tech?s=21
+- Bot runs 24/7 on Cloud
 
 ## Disclaimer
 
