@@ -2,4 +2,4 @@
 2026-02-23 | Initial Capital: $52.24 Today: $-42.40 Balance: $-5.36 Win Rate: 42.9% (24/56)
 2026-02-24 | Initial Capital: $52.24 Today: $-32.20 Balance: $-37.56 Win Rate: 44.0% (22/50)
 2026-02-25 | Initial Capital: $52.24 Today: $+32.20 Balance: $-5.36 Win Rate: 57.1% (28/49)
-2026-02-26 | Initial Capital: $52.24 Today: $+34.20 Balance: $28.84 Win Rate: 88.9% (8/9)
+2026-02-26 | Initial Capital: $52.24 Today: $+29.20 Balance: $23.84 Win Rate: 80.0% (8/10)
