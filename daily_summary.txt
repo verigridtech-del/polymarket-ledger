@@ -1,1 +1,4 @@
+=== BTC Auto Trader Daily Summary (JST) ===
+LIVE trades only
+
 No LIVE trades yet. System running with V3 model.
