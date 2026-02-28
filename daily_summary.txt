@@ -2,8 +2,8 @@
 LIVE trades only
 
 2026-02-27 | PnL: $+4.70 | Balance: $56.87 | WR: 60% (3W 2L) [v3:5]
-2026-02-28 | PnL: $-0.10 | Balance: $56.77 | WR: 50% (1W 1L) [v3:2]
+2026-02-28 | PnL: $-5.10 | Balance: $51.77 | WR: 33% (1W 2L) [v3:3]
 
 Initial: $52.17
-Current: $56.77
-Total PnL: $+4.60
+Current: $51.77
+Total PnL: $-0.40
