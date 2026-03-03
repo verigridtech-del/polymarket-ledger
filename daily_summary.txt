@@ -1,8 +1,8 @@
 === BTC Auto Trader Daily Summary (JST) ===
 LIVE trades only
 
-2026-03-04 | PnL: $-5.00 | Balance: $48.23 | WR: 0% (0W 1L) [v3:1]
+2026-03-04 | PnL: $-0.10 | Balance: $53.13 | WR: 50% (1W 1L) [v3:2]
 
 Initial: $53.23
-Current: $48.23
-Total PnL: $-5.00
+Current: $53.13
+Total PnL: $-0.10
