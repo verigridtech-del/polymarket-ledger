@@ -1,50 +1,48 @@
-# PolyBot v5 — Polymarket Market Maker Journal
+# Polymarket BTC Auto Trader — Public Ledger
 
-> Open-source market maker running live on Polymarket with $61.34 starting capital.
-> Day 0: 2026-03-09
+Automated trading bot for Polymarket's BTC 5-minute Up/Down prediction markets.
 
-## Current Status (Day 0)
+## What This Is
 
-| Metric | Value |
-|--------|-------|
-| Portfolio Value | $61.34 |
-| ROI | +0.0% |
-| Total Fills | 0 |
-| Adverse Selection Rate | 0% |
-| Active Positions | 1 |
+This repository is a **public, tamper-resistant record** of every trade made by the bot.
 
-## Strategy
+- All trades are logged automatically — wins and losses
+- No manual edits. No cherry-picking results
+- Updated every 30 minutes via cron
 
-PolyBot v5 is an adaptive Polymarket market maker with data-driven quote protection:
+## What's Tracked
 
-- **Spread band filter**: Only quotes when spread is 0.05-0.15 (medium liquidity)
-- **Post-fill cooldown**: 60s pause after each fill to avoid stale-price pickoffs
-- **Inventory direction lock**: No same-side accumulation (reduces adverse selection from 83% to near 0%)
+`daily_summary.txt` — Daily performance log (JST timezone)
+```
+2026-02-27 | PnL: $+7.44 | Balance: $59.61 | WR: 60% (3W 2L) [v3:5]
+```
 
-## Daily Reports
+- **PnL**: Profit/loss for the day
+- **Balance**: Running balance from initial capital
+- **WR**: Win rate (Wins / Total)
+- **[v3:5]**: Model version and number of trades
 
-| Day | Date | Portfolio | ROI | Fills | Adverse Rate |
-|-----|------|-----------|-----|-------|-------------|
-| 0 | 2026-03-09 | $61.34 | +0.0% | 0 | 0% |
+## How It Works
 
-## Research Journey
+Three machine learning models (V1, V2, V3) run in parallel. Every few hours, all three retrain on the latest market data. The system automatically selects whichever model has the best statistical edge. No human decision-making involved.
 
-This project evolved through systematic research:
+Only LIVE trades with real money are recorded here. Dry-run / paper trades are excluded.
 
-1. **ML prediction** → NO (zero predictive power, all features corr < ±0.01)
-2. **Binance→Polymarket lead-lag** → NO (correlations near zero)
-3. **Jump-fade arbitrage** → Edge exists but execution impossible (spread = 0.98)
-4. **Market making with quote protection** → Current approach (v5)
+## Integrity
 
-Key insight: The edge is not in *predicting* prices, but in *providing liquidity safely*.
+- **Branch protection is enabled**: force pushes and branch deletions are blocked
+- Every commit is timestamped and cannot be retroactively removed
+- This means past records cannot be altered or erased
+- You can verify this under Settings > Branches > Branch protection rules
 
-## Architecture
+Initial capital: **$52.17**
+Tracking start: **2026-02-26 21:08 JST**
 
-- Python bot on EC2 (Ireland)
-- Polymarket CLOB API for order management
-- 15-second quote cycle with adaptive regime classification
-- Fill Impact Engine tracks post-fill price movement at 5s/15s/60s
+## Links
 
-## License
+- Daily updates posted on [X (Twitter)]https://x.com/verigrid_tech?s=21
+- Bot runs 24/7 on Cloud
 
-MIT
+## Disclaimer
+
+This is an experimental project. Past performance does not guarantee future results. This is not financial advice.
