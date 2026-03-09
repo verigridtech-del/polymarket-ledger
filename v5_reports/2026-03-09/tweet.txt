@@ -1,0 +1,8 @@
+PolyBot v5 | Day 0
+
+Balance: $61.34 (+0.0%)
+Fills today: 0
+Positions: 1
+
+Strategy: Polymarket MM with quote protection
+Open source: github.com/[repo]
