@@ -6,7 +6,8 @@ LIVE trades only
 2026-03-09 | PnL: $-4.95 | Balance: $52.24 | WR: 0% (0W 1L) [v3:1]
 2026-03-10 | PnL: $+5.00 | Balance: $57.24 | WR: 100% (1W 0L) [v3:1]
 2026-03-10 | PnL: $+0.92 | Balance: $62.24 | WR: 0% (0W 0L) [v5:day1]
+2026-03-11 | PnL: $+0.23 | Balance: $61.55 | WR: 0% (0W 0L) [v5:day2]
 
 Initial: $53.23
-Current: $57.24
-Total PnL: $+4.01
+Current: $61.55
+Total PnL: $+0.23
